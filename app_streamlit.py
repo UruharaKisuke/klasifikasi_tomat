@@ -4,7 +4,8 @@ import joblib
 
 st.set_page_config(
 	page_title = "Klasifikasi Tomat",
-	page_icon = ":tomato:"
+	page_icon="🍅",
+	layout="centered"
 )
 
 model = joblib.load("model_klasifikasi_tomat.joblib")
@@ -29,4 +30,5 @@ if st.button("Prediksi", type="primary"):
 
 st.divider()
 
-st.caption("Dibuat dengan :tomato: oleh **Raditya Fauzi Pratama**")
+st.caption("Dibuat dengan 🍅 oleh **Raditya Fauzi Pratama**")
+

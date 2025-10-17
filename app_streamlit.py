@@ -10,7 +10,7 @@ st.set_page_config(
 model = joblib.load("model_klasifikasi_tomat.joblib")
 scaler = joblib.load("scaler_klasifikasi_tomat.joblib")
 
-st.title(":tomato:Klasifikasi Tomat")
+st.title("🍅Klasifikasi Tomat")
 st.markdown("Aplikasi machine learning untuk mengklasifikasikan tomat ke dalam kategori **Ekspor**, **Lokal Premium**, atau **Industri** berdasarkan fitur kualitas seperti ukuran, warna, dan tekstur.")
 
 berat = st.slider("Berat Tomat", 50, 200, 80)
@@ -29,3 +29,4 @@ if st.button("Prediksi", type="primary"):
 
 st.divider()
 st.caption("Dibuat dengan 🍅 oleh **Raditya Fauzi Pratama**")
+

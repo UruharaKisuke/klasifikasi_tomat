@@ -4,14 +4,14 @@ import joblib
 
 st.set_page_config(
 	page_title = "Klasifikasi Tomat",
-	page_icon = "🍅"
+	page_icon = ":tomato:"
 )
 
 model = joblib.load("model_klasifikasi_tomat.joblib")
 scaler = joblib.load("scaler_klasifikasi_tomat.joblib")
 
-st.title("Klasifikasi Tomat")
-st.markdown("Aplikasi machine learning untuk klasifikasi tomat termasuk ategori Ekspor, Lokal Premium, atau Industri")
+st.title(":tomato:Klasifikasi Tomat")
+st.markdown("Aplikasi machine learning untuk mengklasifikasikan tomat ke dalam kategori Ekspor, Lokal Premium, atau Industri berdasarkan fitur kualitas seperti ukuran, warna, dan tekstur.")
 
 berat = st.slider("Berat Tomat", 50, 200, 80)
 kekenyalan = st.slider("Tingkat Kekenyalan", 2.0, 10.0, 4.2)
@@ -28,4 +28,5 @@ if st.button("Prediksi", type="primary"):
 	st.balloons()
 
 st.divider()
-st.caption("Dibuat dengan 🍅 oleh **Raditya Fauzi Pratama**")
+
+st.caption("Dibuat dengan :tomato: oleh **Raditya Fauzi Pratama**")
